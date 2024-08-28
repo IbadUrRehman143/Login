@@ -7,7 +7,7 @@ const Users = () => {
     const handleDelete = (id) => {
         axios.delete(`http://127.0.0.1:3000/users/${id}`).then(() => {
             window.location.reload()
-        }).catch((err) => console.log(err))
+        }).catch((err) => console.log(err))  
     }
   useEffect(() => {
     axios.get("http://127.0.0.1:3000/").then((result) => {
